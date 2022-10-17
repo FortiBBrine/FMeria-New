@@ -1,0 +1,110 @@
+name: FMeria
+version: '1.9.1'
+main: me.FortiBrine.FMeria.FMeria
+api-version: 1.13
+
+author: IJustFortiLive
+description: "Плагин на фракции"
+
+commands:
+  hp:
+    description: "Вылечить игрока"
+    usage: "§7/hp [Никнейм]"
+  f:
+    description: "Выход из фракции"
+    usage: "§7/f leave"
+  gov:
+    description: "Отправление сообщения в гос новости"
+    usage: "§7/gov [Сообщение]"
+  d:
+    description: "Отправление сообщения в департамент"
+    usage: "§7/d [Сообщение]"
+  fmeria:
+    description: "Перезагрузка конфигурации"
+    usage: "§7/fmeria reload"
+  invite:
+    description: "Пригласить игрока"
+    usage: "§7/invite [Никнейм]"
+  uninvite:
+    description: "Уволить игрока"
+    usage: "§7/uninvite [Никнейм]"
+  rb:
+    description: "НРП Рация фракции"
+    usage: "/rb [Сообщение]"
+  fonline:
+    description: "Игрока которые в сети фракции"
+    usage: /fonline
+  rr:
+    description: "РП Рация фракции"
+    usage: "§7/rr [Сообщение]"
+  fhome:
+    description: "Телепортация на базу фракции"
+    usage: /fhome
+  setfhome:
+    description: "Установить базу фракции"
+    usage: /setfhome
+  leaders:
+    description: "Посмотреть лидеров фракции"
+    usage: /leaders
+  inv:
+    description: "Принять или отклонить приглашение"
+    usage: "§7/inv [accept/decline]"
+  uprang:
+    description: "Повысить игрока"
+    usage: "/uprang [Никнейм]"
+  fblock:
+    description: "Заблокировать игрока"
+    usage: "§7/fblock [Никнейм]"
+  funblock:
+    description: "Разблокировать игрока"
+    usage: "§7/funblock [Никнейм]"
+  downrang:
+    description: "Понизить игрока"
+    usage: "§7/downrang [никнейм]"
+  fvig:
+    description: "Выдать выговор"
+    usage: "§7/fvig [Никнейм]"
+  funvig:
+    description: "Снять выговор"
+    usage: "§7/funvig [Никнейм]"
+  setfname:
+    description: "Установить название рангу"
+    usage: "/setfname [Ранг/name] [Название]"
+  setrank:
+    description: "Установить ранг игроку"
+    usage: "§7/setrank [Никнейм][Фракция][Ранг](Отладка)"
+  setsalary:
+    description: "Установить зарплату рангу"
+    usage: "§7/setsalary [Ранг] [Количество]"
+  fbalance:
+    description: "Управление балансом фракции"
+    usage: /fbalance
+  law:
+    description: "Управление законами сервера"
+    usage: "/law <del/delcategory/setcategory/set/list/settime>"
+  makeleader:
+    description: "Установить лидера фракции"
+    usage: "/makeleader [-/никнейм]"
+  fhelp:
+    description: "Помощь по плагину"
+    usage: "/fhelp"
+  fcreate:
+    description: "Команда для создании фракции"
+    usage: "§7/fcreate [ID] [Название]"
+  franks:
+    description: "Команда для управлениями рангами"
+    usage: "§7/franks [Фракция] [Ранг 1] [Ранг 2] [Ранг N]"
+
+permissions:
+  fmeria.reload:
+    description: "Право на перезапуск плагина"
+    default: op
+  fmeria.setrank:
+    description: "Право на выдачу рангов"
+    default: op
+  fmeria.fcreate:
+    description: "Право на создание фракций"
+    default: op
+  fmeria.franks:
+    description: "Право на управлениями рангами"
+    default: op
